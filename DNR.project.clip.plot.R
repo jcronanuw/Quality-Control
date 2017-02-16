@@ -15,7 +15,7 @@
 username <- Sys.getenv("USERNAME")
 
 #Create file path to Git repository
-dir <- paste("C:/Users/", username, "/Documents/GitHub/EglinAirForceBase", sep = "")
+dir <- paste("C:/Users/", username, "/Documents/GitHub/Quality-Control", sep = "")
 
 #Set working directory
 setwd(dir)
