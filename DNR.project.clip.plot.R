@@ -1,4 +1,28 @@
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+
+#Purpose: Function that will create data for zero values in the MySQL Fire and Environmental Research
+#Applications Team surface fuel consumption database
+#Author: Paulina Llamas
+
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+
+
+#Identify user
+username <- Sys.getenv("USERNAME")
+
+#Create file path to Git repository
+dir <- paste("C:/Users/", username, "/Documents/GitHub/EglinAirForceBase", sep = "")
+
+#Set working directory
+setwd(dir)
+
+#Open toy dataset (demonstrates function)
 cliplot1 <- read_excel("~/Downloads/clipdata.xlsx")
+
 summary.clipdata<-summary(cliplot1)
 ####Checking dataset dimensions 
 dim(cliplot1)
